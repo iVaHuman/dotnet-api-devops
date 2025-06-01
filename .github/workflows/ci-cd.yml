@@ -43,6 +43,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /opt/dotnet-api-devops
-            git pull
+            git clone git@github.com:iVaHuman/dotnet-api-devops.git
             docker compose down
             docker compose up -d --build
