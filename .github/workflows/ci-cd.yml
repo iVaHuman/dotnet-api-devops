@@ -42,7 +42,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /opt/myapi
+            cd /root/dotnet-api-devops
             git pull
             docker compose down
             docker compose up -d --build
